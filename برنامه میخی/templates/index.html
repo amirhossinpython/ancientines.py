@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تبدیل متن به خطوط باستانی</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 style='color:red;'>تبدیل متن به خطوط باستانی</h1>
+        <textarea id="inputText" placeholder="متن خود را اینجا بنویسید..."></textarea>
+        <button id="convertButton">تبدیل</button>
+        <div id="outputContainer">
+            <h2 style='color:green'>نتیجه:</h2>
+            <div id="cuneiformOutput" class="output-section"></div>
+            <div id="pahlaviOutput" class="output-section"></div>
+            <div id="manaviOutput" class="output-section"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
